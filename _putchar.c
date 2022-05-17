@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -15,10 +14,6 @@ int _puts(char *str)
 		_putchar(*str++);
 	return (str - a);
 }
-=======
-#include <unistd.h>
-
->>>>>>> 420dcf8341301ac138824a7e822fa71c6f47ac6e
 
 /**
  * _putchar - writes the character c to stdout
@@ -27,7 +22,6 @@ int _puts(char *str)
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-<<<<<<< HEAD
 int _putchar(int c)
 {
 	static int i;
@@ -41,10 +35,4 @@ int _putchar(int c)
 	if (c != BUF_FLUSH)
 		buf[i++] = c;
 	return (1);
-=======
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
->>>>>>> 420dcf8341301ac138824a7e822fa71c6f47ac6e
