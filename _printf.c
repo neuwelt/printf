@@ -6,6 +6,7 @@
  *
  * Return: number of bytes printed
  */
+
 int _printf(const char *format, ...)
 {
 	int sum = 0;
@@ -44,6 +45,8 @@ int _printf(const char *format, ...)
 			sum += get_print_func(p, ap, &params);
 	}
 	_putchar(BUF_FLUSH);
+
 	va_end(ap);
+
 	return (sum);
 }
